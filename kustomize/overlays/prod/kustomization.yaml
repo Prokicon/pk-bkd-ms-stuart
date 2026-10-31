@@ -4,8 +4,8 @@ kind: Kustomization
 resources:
   - ../../base
   - external-secret.yaml
-  - image-pull-external-secret.yaml
-  - ingress.yaml
+  - virtualservice.yaml
+  - request-authentication.yaml
 
 namespace: stuart
 

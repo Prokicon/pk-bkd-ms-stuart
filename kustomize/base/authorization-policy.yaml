@@ -1,0 +1,17 @@
+apiVersion: security.istio.io/v1
+kind: AuthorizationPolicy
+metadata:
+  name: pk-bkd-ms-api-stuart
+spec:
+  selector:
+    matchLabels:
+      app: pk-bkd-ms-api-stuart
+  action: ALLOW
+  rules:
+    - to:
+        - operation:
+            methods: ["GET"]
+            paths: ["/health-check"]
+    - from:
+        - source:
+            requestPrincipals: ["*"]

@@ -1,0 +1,16 @@
+apiVersion: networking.istio.io/v1
+kind: VirtualService
+metadata:
+  name: pk-bkd-ms-api-stuart
+  namespace: stuart
+spec:
+  hosts:
+    - stuart.prokicon.com
+  gateways:
+    - istio-ingress/platform
+  http:
+    - route:
+        - destination:
+            host: pk-bkd-ms-api-stuart.stuart.svc.cluster.local
+            port:
+              number: 80
