@@ -4,6 +4,7 @@ kind: Kustomization
 resources:
   - deployment.yaml
   - service.yaml
+  - serviceaccount.yaml
   - authorization-policy.yaml
 
 labels:

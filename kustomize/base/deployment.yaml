@@ -14,6 +14,7 @@ spec:
       labels:
         app: pk-bkd-ms-api-stuart
     spec:
+      serviceAccountName: pk-bkd-ms-api-stuart
       containers:
         - name: pk-bkd-ms-api-stuart
           image: ghcr.io/prokicon/pk-bkd-ms-stuart
