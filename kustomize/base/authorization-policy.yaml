@@ -14,4 +14,7 @@ spec:
             paths: ["/health-check"]
     - from:
         - source:
+            principals: ["cluster.local/ns/stuart/sa/pk-bkd-bot-stuart"]
+    - from:
+        - source:
             requestPrincipals: ["*"]
