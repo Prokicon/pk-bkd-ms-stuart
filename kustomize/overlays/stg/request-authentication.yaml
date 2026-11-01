@@ -7,6 +7,6 @@ spec:
     matchLabels:
       app: pk-bkd-ms-api-stuart
   jwtRules:
-    - issuer: http://keycloak.stg/realms/stuart
+    - issuer: http://keycloak.stg:30080/realms/stuart
       jwksUri: http://keycloak.keycloak.svc.cluster.local/realms/stuart/protocol/openid-connect/certs
       forwardOriginalToken: true
